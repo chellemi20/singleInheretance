@@ -1,0 +1,20 @@
+class ContentCreator:
+    def __init__(self, name, follower):
+        self.name=name
+        self.follower=follower
+
+    def createPost(self):
+        print(f"Thank you for the {self.follower} followers")
+
+class tiktoker(ContentCreator):
+    def __init__(self, name, follower):
+        self.name=name
+        self.follower=follower
+
+    def recordVideo(self):
+        print(f"{self.name} has created a video")
+
+obj=tiktoker("Rochelle", 100000)
+print(f"My name is {obj.name}")
+obj.recordVideo()
+obj.createPost()
