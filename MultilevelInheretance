@@ -1,0 +1,22 @@
+class Educator:
+    def prepareLesson(self):
+        print("Preparing a  lesson plan...")
+
+class ITInstructor(Educator):
+    def prepareLesson(self):
+        print("Preparing a technical lesson plan for coding...")
+    
+    def teachCoding(self):
+        print("Teaching coding and programming.")
+
+class DatabaseInstructor(ITInstructor):
+    def demonstrateMySQL(self):
+        print("Demonstrating MySQL queries and database management.")
+
+    def teachCoding(self):
+        print("Integrating SQL with Python in coding lessons.")
+
+obj=DatabaseInstructor()
+obj.prepareLesson()
+obj.demonstrateMySQL()
+obj.teachCoding()
