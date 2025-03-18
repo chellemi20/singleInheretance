@@ -1,0 +1,16 @@
+class GraphicDesigner:
+    def designlogo(self):
+        print("Designing a Simple Green Leaf logo")
+
+class WebDeveloper:
+    def buildwebsite(self):
+        print("Building Ecolife website .....")
+
+class DigitalSolutionsProvide(GraphicDesigner,WebDeveloper):
+    def deliverproject(self):
+        print("Delivering Project")
+        self.designlogo()
+        self.buildwebsite()
+
+obj=DigitalSolutionsProvide()
+obj.deliverproject()
